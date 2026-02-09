@@ -1,0 +1,381 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* [data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+
+/* :root {
+  --ifm-color-primary: #f59e0b;
+  --ifm-color-primary-dark: #dd8e09;
+  --ifm-color-primary-darker: #d18709;
+  --ifm-color-primary-darkest: #ac6f07;
+  --ifm-color-primary-light: #f6a824;
+  --ifm-color-primary-lighter: #f7ad30;
+  --ifm-color-primary-lightest: #f8bb55;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ffb875;
+  --ifm-color-primary-dark: #ffa550;
+  --ifm-color-primary-darker: #ff9b3d;
+  --ifm-color-primary-darkest: #ff7f05;
+  --ifm-color-primary-light: #ffcb9a;
+  --ifm-color-primary-lighter: #ffd5ad;
+  --ifm-color-primary-lightest: #fff1e5;
+  --ifm-background-color: #000000;
+} */
+
+
+/* =========================================================
+   Shadcn-inspired Orange Theme for Docusaurus
+   Calm • Neutral • Subtle • Production-ready
+   ========================================================= */
+
+/* ------------------------------
+   Light Theme
+-------------------------------- */
+:root {
+  /* Brand / Primary (mapped from shadcn --primary) */
+  --ifm-color-primary: #c9822b;
+  --ifm-color-primary-dark: #b57424;
+  --ifm-color-primary-darker: #a86c22;
+  --ifm-color-primary-darkest: #8a581c;
+  --ifm-color-primary-light: #d4943f;
+  --ifm-color-primary-lighter: #dda15a;
+  --ifm-color-primary-lightest: #f1c48c;
+
+  /* Backgrounds */
+  --ifm-background-color: #fafafa;
+  --ifm-background-surface-color: #ffffff;
+
+  /* Typography */
+  --ifm-font-color-base: #2f2f2f;
+  --ifm-font-color-secondary: #6b6b6b;
+
+  /* Borders / separators */
+  --ifm-color-emphasis-100: #f4f4f5;
+  --ifm-color-emphasis-200: #e5e5e5;
+  --ifm-color-emphasis-300: #d4d4d4;
+
+  /* Code */
+  --ifm-code-font-size: 90%;
+  --ifm-code-background: #f4f4f5;
+
+  /* Radius (shadcn-like) */
+  --ifm-global-radius: 0.5rem;
+  --ifm-button-border-radius: 0.5rem;
+  --ifm-code-border-radius: 0.375rem;
+
+  /* Links */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-dark);
+
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+
+  /* Footer */
+  --ifm-footer-background-color: #fafafa;
+}
+
+/* ------------------------------
+   Dark Theme
+-------------------------------- */
+[data-theme='dark'] {
+  /* Brand / Primary (mapped from shadcn dark --primary) */
+  --ifm-color-primary: #FFAC1C;
+  --ifm-color-primary-dark: #e6b05e;
+  --ifm-color-primary-darker: #d9a24d;
+  --ifm-color-primary-darkest: #b88534;
+  --ifm-color-primary-light: #f3ce92;
+  --ifm-color-primary-lighter: #f6d9a8;
+  --ifm-color-primary-lightest: #fbecd4;
+
+  /* Backgrounds (NOT pure black – shadcn dark style) */
+  --ifm-background-color: #111111;
+  --ifm-background-surface-color: #232323;
+
+  /* Typography */
+  --ifm-font-color-base: #ededed;
+  --ifm-font-color-secondary: #bdbdbd;
+
+  /* Borders / separators */
+  --ifm-color-emphasis-100: #262626;
+  --ifm-color-emphasis-200: #2f2f2f;
+  --ifm-color-emphasis-300: #3a3a3a;
+
+  /* Code */
+  --ifm-code-background: #262626;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #1c1c1c;
+  --ifm-navbar-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  /* Footer */
+  --ifm-footer-background-color: #1c1c1c;
+}
+
+/* ------------------------------
+   Global polish (shadcn vibes)
+-------------------------------- */
+
+/* Softer links */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Cleaner tables */
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Subtle cards */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: none;
+}
+
+/* Sidebar refinements */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 0.5rem;
+}
+
+/* Buttons feel shadcn-ish */
+.button {
+  font-weight: 500;
+}
+
+/* ------------------------------
+   Custom Navbar (Glassmorphism)
+-------------------------------- */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(28, 28, 28, 0.4) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ------------------------------
+   Sticky Sidebar
+-------------------------------- */
+.theme-doc-sidebar-container {
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+html[data-navbar-fixed='true'] .theme-doc-sidebar-container {
+  top: var(--ifm-navbar-height);
+  height: calc(100vh - var(--ifm-navbar-height));
+}
+
+/* ------------------------------
+   Footer Hidden (Temporary)
+-------------------------------- */
+.footer {
+  display: none !important;
+}
+/* ------------------------------
+   Hide Scrollbars (Clean Look)
+-------------------------------- */
+/* Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+/* ------------------------------
+   Sidebar Width Adjustment
+-------------------------------- */
+:root {
+  --doc-sidebar-width: 320px !important;
+}
+
+/* ------------------------------
+   Sidebar Text Truncation & Overflow
+-------------------------------- */
+.theme-doc-sidebar-container {
+  overflow-x: hidden !important; /* No horizontal scroll */
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Ensure nested items don't break layout */
+.theme-doc-sidebar-menu .menu__list-item {
+  display: block;
+  overflow: hidden;
+}
+
+/* ------------------------------
+   GitHub Icon Link
+-------------------------------- */
+/* Targets the specific class we added in config */
+.header-github-link {
+  width: 28px;
+  height: 28px;
+  display: flex !important;
+  background: url('/img/GitHub.svg') no-repeat center;
+  background-size: contain;
+  /* margin-right: 12px; */
+  /* Ensure no text underline styling conflicts */
+  text-decoration: none !important; 
+}
+/* If dark mode needs inversion (assuming black icon) */
+[data-theme='dark'] .header-github-link {
+  filter: invert(1);
+}
+
+/* ------------------------------
+   Inline Code Styling (High Visibility)
+-------------------------------- */
+code {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: #f0c27a !important; /* Gold/Orange text to pop */
+  font-weight: 500;
+  vertical-align: middle; /* Better alignment */
+}
+
+[data-theme='light'] code {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #b57424 !important; /* Strong orange for light mode */
+}
+
+/* Fix: Do not apply these styles to code blocks (pre > code) */
+pre code {
+  background-color: transparent !important;
+  border: none;
+  padding: 12px;
+  color: inherit !important;
+}
+
+/* Ensure bold inline code inherits bold weight */
+strong code {
+  font-weight: 800 !important; /* Extra bold to be visible in code font */
+}
+
+/* Ensure code inside headers inherits bold weight */
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  font-weight: inherit !important;
+  font-size: inherit !important; /* Ensure size matches header */
+}
+
+/* ------------------------------
+   Enhanced Table Borders
+-------------------------------- */
+table th, table td {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Visible separator in dark mode */
+}
+
+[data-theme='light'] table th, 
+[data-theme='light'] table td {
+  border: 1px solid rgba(0, 0, 0, 0.2) !important; /* Visible separator in light mode */
+}
+
+/* ------------------------------
+   Distinct Code Blocks
+-------------------------------- */
+/* Main code blocks (pre) */
+.prism-code {
+  background-color: #242424 !important; /* Darker than page bg for contrast */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border definition */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Slight lift */
+}
+
+/* Light mode adjustment */
+[data-theme='light'] .prism-code {
+  background-color: #f9f9f9 !important; /* Subtle off-white */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Very subtle border */
+}
+
+/* ------------------------------
+   Mobile Sidebar Fix
+-------------------------------- */
+/* Force the mobile sidebar to take full viewport height, overriding any parent constraints */
+.navbar-sidebar {
+  height: 100vh !important;
+  height: 100dvh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  z-index: 200 !important; /* Ensure it stays on top */
+}
+
+/* Ensure the backdrop covers everything */
+.navbar-sidebar__backdrop {
+  height: 100vh !important;
+  height: 100dvh !important;
+  position: fixed !important;
+  z-index: 199 !important;
+}

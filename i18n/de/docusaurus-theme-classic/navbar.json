@@ -1,0 +1,62 @@
+{
+  "title": {
+    "message": "Learning Notes",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.System Design": {
+    "message": "System Design",
+    "description": "Navbar item with label System Design"
+  },
+  "item.label.DevOps": {
+    "message": "DevOps",
+    "description": "Navbar item with label DevOps"
+  },
+  "item.label.Frontend": {
+    "message": "Frontend",
+    "description": "Navbar item with label Frontend"
+  },
+  "item.label.Backend": {
+    "message": "Backend",
+    "description": "Navbar item with label Backend"
+  },
+  "item.label.Database": {
+    "message": "Database",
+    "description": "Navbar item with label Database"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.React": {
+    "message": "React",
+    "description": "Navbar item with label React"
+  },
+  "item.label.Nextjs": {
+    "message": "Nextjs",
+    "description": "Navbar item with label Nextjs"
+  },
+  "item.label.Flask": {
+    "message": "Flask",
+    "description": "Navbar item with label Flask"
+  },
+  "item.label.Java": {
+    "message": "Java",
+    "description": "Navbar item with label Java"
+  },
+  "item.label.MongoDB": {
+    "message": "MongoDB",
+    "description": "Navbar item with label MongoDB"
+  },
+  "item.label.PostgreSQL": {
+    "message": "PostgreSQL",
+    "description": "Navbar item with label PostgreSQL"
+  }
+}
