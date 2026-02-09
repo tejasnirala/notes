@@ -27,11 +27,11 @@ export default function DocItemContent({children}) {
   const syntheticTitle = useSyntheticTitle();
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
-      {syntheticTitle && (
+      {/* {syntheticTitle && (
         <header>
           <Heading as="h1">{syntheticTitle}</Heading>
         </header>
-      )}
+      )} */}
       <MDXContent>{children}</MDXContent>
     </div>
   );

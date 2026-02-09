@@ -1,4 +1,6 @@
-# `useReducer` Hook
+---
+title: useReducer
+---
 
 ## What is `useReducer`?
 

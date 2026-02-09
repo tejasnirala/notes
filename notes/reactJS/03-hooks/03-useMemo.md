@@ -1,12 +1,11 @@
-# `useMemo` Hook
+---
+title: useMemo
+---
 
 ## What is `useMemo`?
 
-`useMemo` is a React Hook that **memoizes** (caches) the result of a computation.
-
+`useMemo` is a React Hook that **memoizes** (caches) the result of a computation.<br/>
 It ensures that an **expensive calculation is not re-executed on every render**, but only when its **dependencies change**.
-
----
 
 ## Why do we need `useMemo`?
 

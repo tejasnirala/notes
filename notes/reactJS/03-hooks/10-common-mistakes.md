@@ -1,4 +1,6 @@
-# ⚠️ Common `useEffect` Mistakes
+---
+title: Common Mistakes
+---
 
 ## 1. Forgetting the Dependency Array
 

@@ -1,4 +1,6 @@
-# `useLayoutEffect` Hook
+---
+title: useLayoutEffect
+---
 
 ## What is `useLayoutEffect`?
 

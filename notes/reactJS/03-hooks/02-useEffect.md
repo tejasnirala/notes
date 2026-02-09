@@ -1,8 +1,12 @@
-# `useEffect` Hook
+---
+title: useEffect
+---
 
 ## What is `useEffect`?
 
-`useEffect` is a React Hook used to perform **side effects** in functional components.
+import H from '@site/src/components/Highlight';
+
+`useEffect` is a React Hook <H>used to perform **side effects**</H> in functional components.
 
 ### What are side effects?
 

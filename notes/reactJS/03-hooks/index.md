@@ -2,9 +2,11 @@
 
 ## 📌 What are Hooks?
 
+import H from '@site/src/components/Highlight';
+
 **Hooks** are special functions provided by React that allow you to "hook into" React features like **state** and **lifecycle methods** from within **functional components**. Before Hooks, these features were only available in class components.
 
-> **Official Definition:** Hooks are functions that let you use React state and lifecycle features without writing a class.
+> **Official Definition:** Hooks are <H>functions that let you use React state and lifecycle features</H> without writing a class.
 
 ### Why Were Hooks Introduced?
 

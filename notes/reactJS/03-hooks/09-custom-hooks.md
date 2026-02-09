@@ -1,4 +1,6 @@
-# Custom Hooks
+---
+title: Custom Hooks
+---
 
 ## What is a Custom Hook?
 

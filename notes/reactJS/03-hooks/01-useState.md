@@ -1,4 +1,6 @@
-# useState Hook
+---
+title: useState
+---
 
 ## What is `useState`?
 
@@ -136,7 +138,7 @@ setCount(count + 1);
 setCount(count + 1);
 ```
 
-Expected: +2
+Expected: +2<br/>
 Actual: +1 (because both use the same old value)
 
 **Correct Approach**
@@ -262,7 +264,6 @@ setCount(prev => {
 ### 2. State Updates Trigger Re-render
 
 Whenever state changes, React:
-
 1. Re-runs the component function
 2. Compares new UI with previous UI
 3. Updates only the necessary parts in the DOM

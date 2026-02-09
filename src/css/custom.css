@@ -65,6 +65,9 @@
    Light Theme
 -------------------------------- */
 :root {
+  /* Global Smooth Scrolling */
+  scroll-behavior: smooth;
+
   /* Brand / Primary (mapped from shadcn --primary) */
   --ifm-color-primary: #c9822b;
   --ifm-color-primary-dark: #b57424;
