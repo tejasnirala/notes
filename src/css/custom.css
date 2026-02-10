@@ -280,12 +280,12 @@ html[data-navbar-fixed='true'] .theme-doc-sidebar-container {
 -------------------------------- */
 /* Targets the specific class we added in config */
 .header-github-link {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   display: flex !important;
   background: url('/img/GitHub.svg') no-repeat center;
   background-size: contain;
-  /* margin-right: 12px; */
+  margin-right: 12px;
   /* Ensure no text underline styling conflicts */
   text-decoration: none !important; 
 }

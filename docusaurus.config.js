@@ -105,6 +105,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'frontend',
+        path: 'notes/frontend',
+        routeBasePath: 'frontend',
+        sidebarPath: './sidebars/frontend.js',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'flask',
         path: 'notes/flask',
         routeBasePath: 'flask',
@@ -175,6 +184,7 @@ const config = {
         docsRouteBasePath: [
           "/docs",
           "/devOps",
+          "/frontend",
           "/flask",
           "/java",
           "/mongoDB",
@@ -221,6 +231,12 @@ const config = {
             label: 'Frontend',
             position: 'left',
             items: [
+              {
+                type: "docSidebar",
+                sidebarId: "frontendSidebar",
+                label: "Core Concepts",
+                docsPluginId: 'frontend',
+              },
               {
                 type: "docSidebar",
                 sidebarId: "reactJSSidebar",
@@ -276,7 +292,7 @@ const config = {
             ],
           },
 
-          { to: '/blog', label: 'Blog', position: 'right' },
+          // { to: '/blog', label: 'Blog', position: 'right' },
 
           {
             href: 'https://github.com/tejasnirala',
@@ -284,10 +300,10 @@ const config = {
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
