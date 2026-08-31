@@ -16,28 +16,28 @@ This section covers the core rendering patterns used in modern frameworks like R
 
 We will explore the following strategies in detail:
 
-### 1. [Client-Side Rendering (CSR)](./csr)
+### 1. [Client-Side Rendering (CSR)](./csr.md)
 
 The browser downloads an empty HTML shell and JavaScript bundle. The JavaScript executes to fetch data and build the UI.
 
 - **Best for:** Highly interactive dashboards, private apps behind authentication.
 - **Trade-off:** Slower initial load, poor SEO without optimization.
 
-### 2. [Server-Side Rendering (SSR)](./ssr)
+### 2. [Server-Side Rendering (SSR)](./ssr.md)
 
 The server generates the full HTML for a page on every request.
 
 - **Best for:** Dynamic content that changes frequently and needs SEO / social sharing.
 - **Trade-off:** Higher server load, slower time-to-first-byte (TTFB).
 
-### 3. [Static Site Generation (SSG)](./ssg)
+### 3. [Static Site Generation (SSG)](./ssg.md)
 
 Pages are pre-rendered into static HTML at build time.
 
 - **Best for:** Blogs, documentation, marketing pages (content that doesn't change often).
 - **Trade-off:** Long build times for large sites, content can be stale.
 
-### 4. [Incremental Static Regeneration (ISR)](./isr)
+### 4. [Incremental Static Regeneration (ISR)](./isr.md)
 
 Allows you to update static pages after you’ve built your site. You can create or update static pages _per-page_, without rebuilding the entire site.
 

@@ -109,7 +109,7 @@ A unique index treats *missing* as a value: two documents both lacking `email` c
 
 ---
 
-## 3. The ESR rule — compound index field order
+## 3. The ESR rule — compound index field order {#the-esr-rule}
 
 **The single most quotable index fact in MongoDB.** Order the keys of a compound index as:
 

@@ -12,7 +12,7 @@ title: Transactions, Read & Write Concerns
 
 ---
 
-## 1. Write Concern — how durable is "done"?
+## 1. Write Concern — how durable is "done"? {#write-concern}
 
 `writeConcern` decides **when the server acknowledges your write.**
 
