@@ -19,9 +19,9 @@ const features = [
     ],
   },
   {
-    title: 'DevOps',
-    description: 'CI/CD, Docker, Kubernetes, and more.',
-    link: '/devOps',
+    title: 'Docker',
+    description: 'Containers, images, volumes, and Compose.',
+    link: '/docker',
     icon: '/img/Docker.svg',
     tags: [
       { name: 'DevOps', color: 'pink' },
@@ -67,6 +67,17 @@ const features = [
     description: 'Advanced open-source relational database.',
     link: '/postgreSQL',
     icon: '/img/PostgreSQL.svg',
+    tags: [
+      { name: 'Database', color: 'green' },
+      { name: 'Intermediate', color: 'yellow' },
+      { name: 'Reference', color: 'gray' },
+    ],
+  },
+  {
+    title: 'Redis',
+    description: 'In-memory data structures, caching, and more.',
+    link: '/redis',
+    icon: '/img/Redis.svg',
     tags: [
       { name: 'Database', color: 'green' },
       { name: 'Intermediate', color: 'yellow' },

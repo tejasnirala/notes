@@ -96,10 +96,10 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'devOps',
-        path: 'notes/devOps',
-        routeBasePath: 'devOps',
-        sidebarPath: './sidebars/devOps.js',
+        id: 'docker',
+        path: 'notes/docker',
+        routeBasePath: 'docker',
+        sidebarPath: './sidebars/docker.js',
       },
     ],
     [
@@ -150,6 +150,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'redis',
+        path: 'notes/redis',
+        routeBasePath: 'redis',
+        sidebarPath: './sidebars/redis.js',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'postgreSQL',
         path: 'notes/postgreSQL',
         routeBasePath: 'postgreSQL',
@@ -183,13 +192,14 @@ const config = {
         explicitSearchResultPath: true,
         docsRouteBasePath: [
           "/docs",
-          "/devOps",
+          "/docker",
           "/frontend",
           "/flask",
           "/java",
           "/mongoDB",
           "/nextJS",
           "/postgreSQL",
+          "/redis",
           "/systemDesign",
           "/reactJS",
         ],
@@ -220,11 +230,17 @@ const config = {
             docsPluginId: 'systemDesign',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'devOpsSidebar',
-            position: 'left',
+            type: 'dropdown',
             label: 'DevOps',
-            docsPluginId: 'devOps',
+            position: 'left',
+            items: [
+              {
+                type: "docSidebar",
+                sidebarId: "dockerSidebar",
+                label: "Docker",
+                docsPluginId: 'docker',
+              },
+            ],
           },
           {
             type: 'dropdown',
@@ -288,6 +304,12 @@ const config = {
                 sidebarId: "postgreSQLSidebar",
                 label: "PostgreSQL",
                 docsPluginId: 'postgreSQL',
+              },
+              {
+                type: "docSidebar",
+                sidebarId: "redisSidebar",
+                label: "Redis",
+                docsPluginId: 'redis',
               },
             ],
           },
