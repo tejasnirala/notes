@@ -1,0 +1,10 @@
+{
+  "//": "Tailwind v4 uses CSS-first config (@source, @custom-variant, @theme). The built-in CSS language server doesn't know these at-rules, so it reports false 'Unknown at rule' errors.",
+  "css.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.vendorPrefix": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

@@ -1,6 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ------------------------------------------------------------------
+   Tailwind v4 — CSS-first configuration.
+
+   This project uses the v4 PostCSS plugin (@tailwindcss/postcss), which
+   does NOT read tailwind.config.js. Everything that used to live there
+   (content globs, darkMode, corePlugins) is configured here instead.
+
+   Preflight is deliberately NOT imported: Docusaurus/Infima ships its own
+   reset, and Tailwind's would fight it. This is the v4 equivalent of the
+   old `corePlugins: { preflight: false }`.
+-------------------------------------------------------------------- */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css';
+
+/* Content sources (was `content` in tailwind.config.js) */
+@source '../../src/**/*.{js,jsx,ts,tsx}';
+@source '../../docs/**/*.{md,mdx}';
+@source '../../blog/**/*.{md,mdx}';
+@source '../../notes/**/*.{md,mdx}';
+
+/* Dark mode hook (was `darkMode: ['class', '[data-theme="dark"]']`) */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
 /**
  * Any CSS included here will be global. The classic template
@@ -192,16 +211,48 @@ table td {
 /* ------------------------------
    Custom Navbar (Glassmorphism)
 -------------------------------- */
+/* Base: an OPAQUE navbar. This is what browsers without backdrop-filter get,
+   and it is the correct fallback — a translucent bar with no blur behind it
+   makes the nav links unreadable as page content scrolls under them. */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 [data-theme='dark'] .navbar {
-  background-color: rgba(28, 28, 28, 0.4) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Frosted glass — only once we know the browser can actually blur the backdrop.
+   NOTE: the @supports wrapper is load-bearing, not just progressive enhancement.
+   Tailwind v4 runs Lightning CSS over this file during production builds only,
+   and on a bare rule it collapses `backdrop-filter` + `-webkit-backdrop-filter`
+   down to the `-webkit-` one alone. Firefox doesn't support the `-webkit-` alias,
+   so the effect silently vanished in `npm run build` while working in `npm start`.
+   Inside @supports, both declarations survive. Don't unwrap this. */
+@supports (backdrop-filter: blur(1px)) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(6px);
+  }
+
+  [data-theme='dark'] .navbar {
+    background-color: rgba(28, 28, 28, 0.65) !important;
+  }
+}
+
+/* Safari < 18, which only ever shipped the -webkit- form. Written as its own
+   block (rather than a second declaration above) so that neither Lightning CSS
+   nor autoprefixer's prefix-pruning pass can drop it: the condition explicitly
+   requires the prefixed property, so removing it would be incorrect. */
+@supports ((-webkit-backdrop-filter: blur(1px)) and (not (backdrop-filter: blur(1px)))) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.65) !important;
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  [data-theme='dark'] .navbar {
+    background-color: rgba(28, 28, 28, 0.65) !important;
+  }
 }
 
 /* ------------------------------

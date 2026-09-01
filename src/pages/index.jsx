@@ -13,8 +13,8 @@ const features = [
     link: '/systemDesign',
     icon: '/img/logo.svg',
     tags: [
-      { name: 'System Design', color: 'blue' },
-      { name: 'Advanced', color: 'purple' },
+      { name: 'System Design', color: 'pink' },
+      { name: 'Beginner', color: 'yellow' },
       { name: 'Concept', color: 'gray' },
     ],
   },
@@ -24,8 +24,8 @@ const features = [
     link: '/devOps',
     icon: '/img/Docker.svg',
     tags: [
-      { name: 'DevOps', color: 'orange' },
-      { name: 'Intermediate', color: 'yellow' },
+      { name: 'DevOps', color: 'pink' },
+      { name: 'Beginner', color: 'yellow' },
       { name: 'Guide', color: 'gray' },
     ],
   },
@@ -36,7 +36,7 @@ const features = [
     icon: '/img/React.js.svg',
     tags: [
       { name: 'Frontend', color: 'blue' },
-      { name: 'Beginner', color: 'green' },
+      { name: 'Intermediate', color: 'yellow' },
       { name: 'Guide', color: 'gray' },
     ],
   },
@@ -52,35 +52,13 @@ const features = [
     ],
   },
   {
-    title: 'Flask',
-    description: 'Lightweight WSGI web application framework.',
-    link: '/flask',
-    icon: '/img/Flask.svg',
-    tags: [
-      { name: 'Backend', color: 'purple' },
-      { name: 'Beginner', color: 'green' },
-      { name: 'Guide', color: 'gray' },
-    ],
-  },
-  {
-    title: 'Java',
-    description: 'Object-oriented programming language.',
-    link: '/java',
-    icon: '/img/Java.svg',
-    tags: [
-      { name: 'Language', color: 'orange' },
-      { name: 'Beginner', color: 'green' },
-      { name: 'Reference', color: 'gray' },
-    ],
-  },
-  {
     title: 'MongoDB',
     description: 'NoSQL database for modern apps.',
     link: '/mongoDB',
     icon: '/img/MongoDB.svg',
     tags: [
       { name: 'Database', color: 'green' },
-      { name: 'Beginner', color: 'green' },
+      { name: 'Intermediate', color: 'yellow' },
       { name: 'Reference', color: 'gray' },
     ],
   },
@@ -93,6 +71,28 @@ const features = [
       { name: 'Database', color: 'green' },
       { name: 'Intermediate', color: 'yellow' },
       { name: 'Reference', color: 'gray' },
+    ],
+  },
+  {
+    title: 'Java',
+    description: 'Object-oriented programming language.',
+    link: '/java',
+    icon: '/img/Java.svg',
+    tags: [
+      { name: 'Language', color: 'orange' },
+      { name: 'Beginner', color: 'yellow' },
+      { name: 'Reference', color: 'gray' },
+    ],
+  },
+  {
+    title: 'Flask',
+    description: 'Lightweight WSGI web application framework.',
+    link: '/flask',
+    icon: '/img/Flask.svg',
+    tags: [
+      { name: 'Backend', color: 'purple' },
+      { name: 'Beginner', color: 'yellow' },
+      { name: 'Guide', color: 'gray' },
     ],
   },
 ];
