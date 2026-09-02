@@ -223,11 +223,37 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'systemDesignSidebar',
-            position: 'left',
+            type: 'dropdown',
             label: 'System Design',
-            docsPluginId: 'systemDesign',
+            position: 'left',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'systemDesignSidebar',
+                label: 'Overview',
+                docsPluginId: 'systemDesign',
+              },
+              {
+                to: '/systemDesign/concepts',
+                label: 'Concepts',
+              },
+              {
+                to: '/systemDesign/building-blocks',
+                label: 'Building Blocks',
+              },
+              {
+                to: '/systemDesign/case-studies',
+                label: 'Case Studies',
+              },
+              {
+                to: '/systemDesign/interview-prep',
+                label: 'Interview Prep',
+              },
+              {
+                to: '/systemDesign/low-level-design',
+                label: 'Low-Level Design',
+              },
+            ],
           },
           {
             type: 'dropdown',
